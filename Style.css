@@ -11,6 +11,12 @@
 }
 a {
     text-decoration: none;
+    color: #3e3d30
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
 }
 
 header,footer {
