@@ -1,0 +1,59 @@
+:root {
+    font-size: 16 px;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #ebe8ce;
+    color: #3e3d30;
+}
+
+header,footer {
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 10px;
+    width: 70%;
+    height: 8rem;
+
+
+    background-color: #e2d34d;
+
+    display: flex;
+    align-items:flex-end;
+    flex-direction: row;
+}
+
+header,footer:last-child {
+    justify-content:right;
+}
+
+.logo {
+    /* image generated from https://app.logo.com/ */
+    content: url(used_medias/logo.png);
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    align-self: flex-start;
+    
+}
+
+.nav-bar{
+    width: 85%;
+    height: 35%;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    gap: 1 rem;
+}
+
+.nav-items {
+    background-color: #f4dd17;
+    color: #42390a;
+    text-align: center;    
+
+    text-decoration: solid;
+}
+.nav-items:hover {
+    background-color: #ca871b;
+}
