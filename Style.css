@@ -19,6 +19,10 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 2em;
+}
+
 header,footer {
     margin-left: 15%;
     margin-right: 15%;
@@ -67,4 +71,10 @@ header,footer:last-child {
 }
 .nav-items:hover {
     background-color: #ca871b;
+}
+
+form {
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 2rem;
 }

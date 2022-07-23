@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style.css" type="text/css" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+<body>
+    
+    <header>
+        <img class="logo" alt="Book God, The Ultimate Website Logo">
+        <nav class="nav-bar">
+                <div class="nav-items"><a href="Home.html" id = "Home anchor">Home</a></div>
+                <div class="nav-items"><a href="Category.html" id = "Science anchor">Science</a></div>
+                <div class="nav-items"><a href="Category.html" id = "Politics anchor">Category 2</a></div>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+
+        <form action="" method="post" enctype="multipart/form-data"onsubmit="return false;">
+            <div>
+                <label for="ContactPurpose">Contact Purpose </label>
+                <select id="ContactPurpose" name="contact_purpose" required>
+                    <option value="sell">I want to sell books</option>
+                    <option value="buy">I want to buy books</option>
+                </select>
+            </div>
+            <div>
+                <label for="user_name_input">Your name</label>
+                <input type="text" name="user_name" id="user_name_input" required>
+            </div>
+            <div>
+                <label for="email_input">Your email</label>
+                <input type="email" name="email" id="emial_input" required>
+            </div>
+            <div>
+                <label for="phoneNumber_input">Your PhoneNumber</label>
+                <input type="tel" name="phonenumber" id="phoneNumber_input" required>
+            </div>
+            <div>
+                <label for="ContactMeansCheckbox">How do we contact you?</label>
+                <div id="ContactMeansCheckbox">
+                    <span><label for="ByEmail">Email</label><input type="checkbox" id="EmailCheckbox" name="ContactMeans[]" value="email" required></span>
+                    <span><label for="ByPhone">Phone</label><input type="checkbox" id="PhoneCheckbox" name="ContactMeans[]" value="phone" required></span>
+                </div>
+            </div>
+            <div>
+                <label for="sendNewsRadio">Do you want to recieve news from us?</label>
+                <div id="sendNewsRadio">
+                    <label for="yesNews">Yes</label><input type="radio" name="sendNews" id="yesNews" checked=true value=true required>
+                    <label for="noNews">No</label><input type="radio" name="sendNews" id="noNews" value=false required>
+                </div>
+            </div>
+            <div>
+                <div><label for="noteInput"> Any addtional notes</label></div>
+                <div><textarea id="noteInput" name="note">Enter note</textarea></div>
+            </div>
+            <input type="submit" id="Submit" name="submit" value="Send your data">
+            <input type="reset" id="Reset" name="reset" value="Undo your data">
+        </form>
+    </main>
+    <footer>
+        <nav class="nav-bar">
+            <div class="nav-items"><a href="#" id = "About Us anchor">About Us</a></div>
+            <div class="nav-items"><a href="#" id = "Privacy anchor">Privacy Policy, Terms, Copyright</a></div>
+            <div class="nav-items"><a href="Contact.html" id = "Contact Us anchor">Contact Us</a></div>
+        </nav>
+    </footer>
+</body>
+</html>
