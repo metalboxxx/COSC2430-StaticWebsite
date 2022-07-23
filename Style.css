@@ -30,16 +30,16 @@ header,footer {
     width: 70%;
     height: 8rem;
 
-
     background-color: #e2d34d;
 
     display: flex;
     align-items:flex-end;
+    justify-content: right;
     flex-direction: row;
 }
 
-header,footer:last-child {
-    justify-content:right;
+header:first-child {
+    justify-content:left;
 }
 
 .logo {
@@ -55,11 +55,18 @@ header,footer:last-child {
 .nav-bar{
     width: 90%;
     height: 35%;
-
     display: grid;
-    grid-template-columns: repeat(3,1fr);
 
-    gap: 1 rem;
+}
+@media only screen and (min-width:960px) {
+    .nav-bar{
+    grid-template-columns: repeat(3,1fr);
+    }
+}
+@media only screen and (max-width:960px) {
+    .nav-bar{
+    grid-template-rows: repeat(3,1fr);
+    }
 }
 
 .nav-items {
